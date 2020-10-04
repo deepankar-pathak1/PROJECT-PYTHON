@@ -1,0 +1,43 @@
+
+Write a function named collatz() that has one parameter named number. If
+number is even, then collatz() should print number // 2 and return this value.
+If number is odd, then collatz() should print and return 3 * number + 1.
+Then write a program that lets the user type in an integer and that keeps
+calling collatz() on that number until the function returns the value 1. 
+
+def collatz():
+    while True:
+        number = int(input("Enter a Number : "))
+        ones = 1
+
+        if number % 2 == 0:
+            variable = number // 2
+            print(variable)
+            if variable == 1:
+                print("Done")
+                break
+        elif number % 2 == 1:
+            variable_1 = 3 * number + 1
+            print(variable_1)
+            if variable_1 == 1:
+                print("Done again")
+                break
+        else:
+            print("Game Over")
+
+
+
+collatz()
+
+**** **** ****
+Enter a Number : 3
+10
+Enter a Number : 5
+16
+Enter a Number : 8
+4
+Enter a Number : 2
+1
+Done
+
+Process finished with exit code 0
