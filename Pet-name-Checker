@@ -1,0 +1,32 @@
+petname = []
+while True:
+    print("Enter Pet name below >>> ")
+    name = input("Pet Name : ")
+    if name == "Q":
+        break
+    petname.append(name)
+print(f"Pet name's are : {petname}")
+
+check = input("You want to check Pet name : ")
+
+if check not in petname:
+    print(f"Name is Not Presnent in Pet Name : {check}")
+else:
+    print(f"Name is Present in Pet Name : {check}")
+    
+    
+*** *** ****
+
+Enter Pet name below >>> 
+Pet Name : tiger
+Enter Pet name below >>> 
+Pet Name : Bruno
+Enter Pet name below >>> 
+Pet Name : Pomerian
+Enter Pet name below >>> 
+Pet Name : Q
+Pet name's are : ['tiger', 'Bruno', 'Pomerian']
+You want to check Pet name : puppy
+Name is Not Presnent in Pet Name : puppy
+
+Process finished with exit code 0
