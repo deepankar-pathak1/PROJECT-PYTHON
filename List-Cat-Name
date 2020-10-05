@@ -1,0 +1,23 @@
+catname = []
+
+while True:
+    print(f"Press Cat {str(len(catname) + 1)} Name OR to Quit Press Q")
+    name = input("Cat Name is : ")
+    if name == "Q":
+        break
+    catname.append(name)
+print(catname)
+
+
+
+**** ****
+
+Press Cat 1 Name OR to Quit Press Q
+Cat Name is : rat
+Press Cat 2 Name OR to Quit Press Q
+Cat Name is : Giji
+Press Cat 3 Name OR to Quit Press Q
+Cat Name is : OKOK
+Press Cat 4 Name OR to Quit Press Q
+Cat Name is : Q
+['rat', 'Giji', 'OKOK']
