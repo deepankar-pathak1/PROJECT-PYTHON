@@ -1,0 +1,17 @@
+lst = []
+while True:
+    a = input("Please Enter The data : ")
+    lst.append(a)
+    if len(lst) == 5:
+        break
+print(lst)
+
+
+**** ****
+
+Please Enter The data : ok
+Please Enter The data : this
+Please Enter The data : thats
+Please Enter The data : why
+Please Enter The data : its
+['ok', 'this', 'thats', 'why', 'its']
