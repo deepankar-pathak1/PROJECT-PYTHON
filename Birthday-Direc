@@ -1,0 +1,31 @@
+birthday = {"Deepankar":"23 May","Deepu":"23 may","unknown":"1 oct"}
+while True:
+    print("Enter Your Name.I'll Tell Your Birthday :) ")
+    a = input("Enter Name >>> : ")
+    if a in birthday:
+        print(f"Name is : {a}. Birthday is {birthday[a]}")
+    else:
+        print(f"Name {a} is not Present")
+        bday = input("Enter DOB : ")
+        birthday[a] = bday
+    if a == "Q":
+        break
+print(f"Directory is : {a}")
+
+
+
+**** **** **** ****
+
+Enter Your Name.I'll Tell Your Birthday :) 
+Enter Name >>> : ram
+Name ram is not Present
+Enter DOB : 23 oct
+Enter Your Name.I'll Tell Your Birthday :) 
+Enter Name >>> : shyam
+Name shyam is not Present
+Enter DOB : 24 oct
+Enter Your Name.I'll Tell Your Birthday :) 
+Enter Name >>> : Deepu
+Name is : Deepu. Birthday is 23 may
+Enter Your Name.I'll Tell Your Birthday :) 
+Enter Name >>> : 
