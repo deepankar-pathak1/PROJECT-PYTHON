@@ -1,0 +1,18 @@
+stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
+count = 0
+for k,v in stuff.items():
+
+    print(f"{v} Number of {k}")
+    count+= v
+
+print(f"Total items : {count}")
+
+
+**** ***** *****
+
+1 Number of rope
+6 Number of torch
+42 Number of gold coin
+1 Number of dagger
+12 Number of arrow
+Total items : 62
